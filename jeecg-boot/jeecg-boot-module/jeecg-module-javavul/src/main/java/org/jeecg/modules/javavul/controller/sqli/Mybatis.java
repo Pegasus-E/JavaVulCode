@@ -1,0 +1,17 @@
+package org.jeecg.modules.javavul.controller.sqli;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Slf4j
+@RestController
+@RequestMapping("/sqli")
+public class Mybatis {
+
+    @GetMapping("/test")
+    public String test(){
+        return "test";
+    }
+}
